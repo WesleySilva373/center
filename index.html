@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Eletric - Materiais de Média Tensão</title>
+    <meta name="description" content="A Center Eletric é líder no fornecimento de materiais de média tensão, fusíveis industriais, chaves seccionadoras e cabines primárias. Garanta a segurança do seu projeto.">
+    <meta name="keywords" content="Média Tensão, Fusíveis Industriais, Chave Seccionadora, Cabine Primária, Equipamentos Elétricos, Center Eletric">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Center Eletric">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/logo_dark_bg_trans.png" type="image/png">
+    
+    <!-- Google Fonts (Outfit & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Swiper Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Header / Topo -->
+    <header class="header-main" id="header-main">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#home" title="Center Eletric Home">
+                    <!-- Usaremos a versão escura com transparência no cabeçalho escuro -->
+                    <img src="img/logo_dark_bg_trans.png" alt="Center Eletric Logo" class="logo-img">
+                </a>
+            </div>
+            
+            <!-- Menu de Navegação Desktop -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#empresa" class="nav-link">Empresa</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#contato" class="nav-link btn-header">Orçamento</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Botão Menu Mobile -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Lateral Mobile -->
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+            <img src="img/logo_dark_bg_trans.png" alt="Center Eletric Logo" class="logo-sidebar">
+            <button class="close-sidebar-btn" id="close-sidebar-btn" aria-label="Fechar Menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#home" class="sidebar-link">Home</a></li>
+                <li><a href="#empresa" class="sidebar-link">Empresa</a></li>
+                <li><a href="#produtos" class="sidebar-link">Produtos</a></li>
+                <li><a href="#diferenciais" class="sidebar-link">Diferenciais</a></li>
+                <li><a href="#contato" class="sidebar-link sidebar-btn">Orçamento</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section (Banner Home) -->
+        <section class="hero-section" id="home">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide hero-slide">
+                        <div class="slide-bg-overlay" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('img/banner1.jpg');"></div>
+                        <div class="container slide-content">
+                            <h2 class="slide-subtitle">MATERIAIS DE MÉDIA TENSÃO</h2>
+                            <h1 class="slide-title">Segurança e Potência para a <strong>Indústria</strong></h1>
+                            <p class="slide-description">Fornecemos uma linha completa de materiais elétricos de média tensão com homologação e testes de laboratório rigorosos.</p>
+                            <div class="slide-actions">
+                                <a href="#produtos" class="btn btn-primary">Conhecer Produtos <i class="fas fa-arrow-right"></i></a>
+                                <a href="#contato" class="btn btn-outline">Solicitar Orçamento</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide hero-slide">
+                        <div class="slide-bg-overlay" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('img/banner2.jpg');"></div>
+                        <div class="container slide-content">
+                            <h2 class="slide-subtitle">PROTEÇÃO ELÉTRICA AVANÇADA</h2>
+                            <h1 class="slide-title">Fusíveis Industriais e <strong>Especiais</strong></h1>
+                            <p class="slide-description">Fusíveis tipo HH, NH e fotovoltaicos projetados sob medida para suportar picos de corrente e evitar falhas severas.</p>
+                            <div class="slide-actions">
+                                <a href="#produtos" class="btn btn-primary">Ver Catálogo <i class="fas fa-arrow-right"></i></a>
+                                <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide hero-slide">
+                        <div class="slide-bg-overlay" style="background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('img/banner3.jpg');"></div>
+                        <div class="container slide-content">
+                            <h2 class="slide-subtitle">SECCIONAMENTO SEGURO</h2>
+                            <h1 class="slide-title">Chaves Seccionadoras <strong>Sob Medida</strong></h1>
+                            <p class="slide-description">Manobras elétricas precisas e seguras com nossas chaves de média e baixa tensão de alta durabilidade.</p>
+                            <div class="slide-actions">
+                                <a href="#produtos" class="btn btn-primary">Saiba Mais <i class="fas fa-arrow-right"></i></a>
+                                <a href="#contato" class="btn btn-outline">Peça um Orçamento</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Swiper Navigation & Pagination -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- Produtos Section -->
+        <section class="section-padding section-produtos" id="produtos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tagline">NOSSO PORTFÓLIO</span>
+                    <h2 class="section-title">Produtos de Alta Performance</h2>
+                    <p class="section-subtitle">Desenvolvidos e certificados para garantir a máxima eficiência e proteção no setor elétrico.</p>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Produto 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/produto1.jpg" alt="Fusíveis de Média Tensão HH" class="prod-img">
+                            <div class="product-overlay">
+                                <a href="#contato" class="btn btn-sm btn-primary">Orçar Produto</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Fusíveis de Média Tensão (HH)</h3>
+                            <p class="product-desc">Ideais para proteção de transformadores, motores, cabines primárias e redes de distribuição.</p>
+                            <a href="#contato" class="product-link">Solicitar Detalhes <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Produto 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/produto2.jpg" alt="Chaves Seccionadoras de Média Tensão" class="prod-img">
+                            <div class="product-overlay">
+                                <a href="#contato" class="btn btn-sm btn-primary">Orçar Produto</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Chaves Seccionadoras</h3>
+                            <p class="product-desc">Chaves tripolares e unipolares sob medida com ou sem base para fusíveis limitadores.</p>
+                            <a href="#contato" class="product-link">Solicitar Detalhes <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Produto 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="img/produto3.jpg" alt="Fusíveis Industriais e Especiais" class="prod-img">
+                            <div class="product-overlay">
+                                <a href="#contato" class="btn btn-sm btn-primary">Orçar Produto</a>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Fusíveis Industriais (NH/UR)</h3>
+                            <p class="product-desc">Fusíveis tipo faca para proteção de sistemas industriais e semicondutores ultrarrápidos.</p>
+                            <a href="#contato" class="product-link">Solicitar Detalhes <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Orçamento Banner -->
+        <section class="section-cta">
+            <div class="container cta-container">
+                <div class="cta-content">
+                    <h2>Precisa de um projeto personalizado ou cotação em lote?</h2>
+                    <p>Nossa equipe de engenharia elétrica está pronta para analisar suas especificações técnicas e enviar a proposta ideal.</p>
+                </div>
+                <div class="cta-action">
+                    <a href="#contato" class="btn btn-gold btn-lg">Solicitar Orçamento Rápido <i class="fas fa-envelope-open-text"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Empresa Section (Sobre Nós) -->
+        <section class="section-padding section-about" id="empresa">
+            <div class="container about-grid">
+                <div class="about-image">
+                    <img src="img/empresa.jpg" alt="Infraestrutura Center Eletric" class="about-img">
+                    <div class="about-experience">
+                        <span class="exp-number">10+</span>
+                        <span class="exp-text">Anos de <br>Experiência</span>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <span class="section-tagline">QUEM SOMOS</span>
+                    <h2 class="section-title">Eletricidade é progresso. <br>Protegê-la é a nossa missão.</h2>
+                    <p class="about-text">
+                        Nascida do desejo de suprir o mercado nacional com o que há de melhor em materiais de média tensão, a **Center Eletric** solidificou-se como um fornecedor confiável e ágil para construtoras, indústrias, cabines primárias e concessionárias de energia.
+                    </p>
+                    <p class="about-text">
+                        Trabalhamos em estreita parceria com os principais laboratórios de ensaios elétricos para garantir que nossos fusíveis e chaves cumpram rigorosamente as normas técnicas vigentes (ABNT/IEC). Nosso compromisso é com a continuidade segura do seu fluxo elétrico.
+                    </p>
+                    <div class="about-bullets">
+                        <div class="bullet-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Homologação nas principais concessionárias</span>
+                        </div>
+                        <div class="bullet-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Materiais com laudos técnicos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais Section -->
+        <section class="section-padding section-diferenciais" id="diferenciais">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">POR QUE NOS ESCOLHER?</span>
+                    <h2 class="section-title">Nossos Diferenciais</h2>
+                    <p class="section-subtitle">Construímos relações sólidas baseadas na pontualidade, qualidade e excelência no atendimento técnico.</p>
+                </div>
+                
+                <div class="cards-diferenciais">
+                    <!-- Card 1 -->
+                    <div class="diff-card">
+                        <div class="diff-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Qualidade Comprovada</h3>
+                        <p>Todos os produtos acompanham certificados de garantia e conformidade com as normas ABNT / IEC.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="diff-card">
+                        <div class="diff-icon">
+                            <i class="fas fa-user-gear"></i>
+                        </div>
+                        <h3>Suporte Especializado</h3>
+                        <p>Nossos engenheiros auxiliam no dimensionamento correto dos fusíveis e chaves para seu projeto elétrico.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="diff-card">
+                        <div class="diff-icon">
+                            <i class="fas fa-boxes-stacked"></i>
+                        </div>
+                        <h3>Amplo Estoque</h3>
+                        <p>Mantemos um estoque regulador estratégico para atender chamados de emergência e paradas de manutenção.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="diff-card">
+                        <div class="diff-icon">
+                            <i class="fas fa-truck-fast"></i>
+                        </div>
+                        <h3>Entrega Imediata</h3>
+                        <p>Despachamos para todo o Brasil com extrema rapidez, garantindo o cumprimento do cronograma da obra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato / Form Section -->
+        <section class="section-padding section-contact" id="contato">
+            <div class="container contact-grid">
+                <div class="contact-text-side">
+                    <span class="section-tagline">FALE CONOSCO</span>
+                    <h2 class="section-title">Solicite um Orçamento Sem Compromisso</h2>
+                    <p class="contact-desc">
+                        Preencha o formulário ao lado ou entre em contato diretamente pelos nossos canais de atendimento. Responderemos sua solicitação em até 2 horas comerciais.
+                    </p>
+                    
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-volume"></i>
+                            </div>
+                            <div class="info-text">
+                                <span>Ligue para nós</span>
+                                <strong>(11) 3323-8656</strong>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="info-text">
+                                <span>WhatsApp Comercial</span>
+                                <strong>(11) 98460-7777</strong>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-text">
+                                <span>Envie um E-mail</span>
+                                <strong>vendas@centereletric.com.br</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-side">
+                    <form id="contact-form" class="premium-form">
+                        <div class="form-group">
+                            <label for="form-name">Nome Completo</label>
+                            <div class="input-wrapper">
+                                <i class="far fa-user"></i>
+                                <input type="text" id="form-name" placeholder="Ex: Wesley Silva" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-email">E-mail Corporativo</label>
+                                <div class="input-wrapper">
+                                    <i class="far fa-envelope"></i>
+                                    <input type="email" id="form-email" placeholder="nome@empresa.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-phone">Telefone / Celular</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="tel" id="form-phone" placeholder="(11) 99999-9999" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="form-message">Lista de Materiais / Mensagem</label>
+                            <div class="input-wrapper text-area-wrapper">
+                                <i class="far fa-comment-dots"></i>
+                                <textarea id="form-message" rows="4" placeholder="Descreva os itens que precisa (tipo, corrente, quantidade)..." required></textarea>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" id="submit-btn" class="btn btn-primary btn-full">Enviar Solicitação <i class="fas fa-paper-plane"></i></button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer / Rodapé -->
+    <footer class="footer-main">
+        <div class="container footer-grid">
+            <div class="footer-col-about">
+                <img src="img/logo_dark_bg_trans.png" alt="Center Eletric Logo" class="footer-logo">
+                <p class="footer-about-text">
+                    Distribuidor especializado em materiais de média tensão e proteção de circuitos industriais para todo o território nacional.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col-links">
+                <h3>Acesso Rápido</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#empresa">Empresa</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#contato">Orçamento</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col-contact">
+                <h3>Contato Comercial</h3>
+                <p><i class="fas fa-location-dot"></i> Av. Industrial, 1200 - São Paulo / SP</p>
+                <p><i class="fas fa-phone"></i> (11) 3323-8656</p>
+                <p><i class="fab fa-whatsapp"></i> (11) 98460-7777</p>
+                <p><i class="fas fa-envelope"></i> vendas@centereletric.com.br</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 <strong>Center Eletric</strong> - Todos os direitos reservados. | <a href="#">Política de Privacidade</a></p>
+                <p class="dev-credits">Design Premium inspirado em Fuseletric</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Fixo -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5511984607777?text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20de%20materiais%20de%20média%20tensão." target="_blank" title="Fale com nosso comercial via WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-tooltip">Orçamento via WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Cookies Consent Banner -->
+    <div class="cookies-banner" id="cookies-banner">
+        <div class="cookies-container">
+            <p>Este site utiliza cookies para otimizar sua navegação e analisar nosso tráfego em conformidade com a LGPD. Ao continuar, você concorda com o uso de cookies.</p>
+            <div class="cookies-actions">
+                <button class="btn btn-sm btn-outline-light" id="cookies-reject">Recusar</button>
+                <button class="btn btn-sm btn-gold" id="cookies-accept">Aceitar cookies</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper Slider JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
