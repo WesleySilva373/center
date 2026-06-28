@@ -6,9 +6,9 @@
     --color-primary: #D4AF37;        /* Metallic Gold */
     --color-primary-light: #FFD700;  /* Bright Gold */
     --color-primary-dark: #AA8C2C;   /* Deep Gold */
-    --color-dark-bg: #0B0B0B;        /* Dark Theme Background */
-    --color-dark-surface: #141414;   /* Surface/Cards in Dark Theme */
-    --color-dark-surface-2: #1E1E1E; /* Secondary Surface */
+    --color-dark-bg: #1A1A1A;        /* Dark Theme Background - Charcoal */
+    --color-dark-surface: #242424;   /* Surface/Cards in Dark Theme */
+    --color-dark-surface-2: #2E2E2E; /* Secondary Surface */
     --color-light-bg: #FFFFFF;       /* Light Theme Background */
     --color-light-surface: #F9F9F9;  /* Light Theme Surface */
     --color-text-dark: #FFFFFF;      /* Text color for dark elements */
@@ -164,7 +164,7 @@ img {
 
 .btn-primary {
     background-color: var(--color-primary);
-    color: #000000;
+    color: #1A1A1A;
 }
 
 .btn-primary:hover {
@@ -181,7 +181,7 @@ img {
 
 .btn-outline:hover {
     background-color: #FFFFFF;
-    color: #000000;
+    color: #1A1A1A;
     transform: translateY(-2px);
 }
 
@@ -198,7 +198,7 @@ img {
 
 .btn-gold {
     background-color: var(--color-primary);
-    color: #000000;
+    color: #1A1A1A;
 }
 
 .btn-gold:hover {
@@ -228,6 +228,9 @@ img {
 
 .btn-full {
     width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* ==========================================================================
@@ -239,10 +242,10 @@ img {
     left: 0;
     width: 100%;
     height: var(--header-height);
-    background-color: rgba(11, 11, 11, 0.85); /* Semi-transparent black */
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(38, 42, 55, 0.90); /* Cinza azulado elegante */
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     z-index: 1000;
     transition: var(--transition-normal);
 }
@@ -250,8 +253,8 @@ img {
 /* Sticky Class triggered by JS */
 .header-main.sticky {
     height: 70px;
-    background-color: #0B0B0B;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background-color: #323648;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
 .header-container {
@@ -318,7 +321,7 @@ img {
 
 .btn-header {
     background-color: var(--color-primary);
-    color: #000000;
+    color: #1A1A1A;
     padding: 10px 20px;
     border-radius: var(--border-radius);
     font-weight: 600;
@@ -330,7 +333,7 @@ img {
 
 .btn-header:hover {
     background-color: var(--color-primary-light);
-    color: #000000;
+    color: #1A1A1A;
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
     transform: translateY(-1px);
 }
@@ -420,7 +423,7 @@ img {
 .sidebar-btn {
     text-align: center;
     background-color: var(--color-primary);
-    color: #000000;
+    color: #1A1A1A;
     border-radius: var(--border-radius);
     padding: 12px;
     border: none;
@@ -428,7 +431,7 @@ img {
 
 .sidebar-btn:hover {
     background-color: var(--color-primary-light);
-    color: #000000;
+    color: #1A1A1A;
     padding-left: 0;
 }
 
@@ -458,7 +461,7 @@ img {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: #000000;
+    background-color: #1A1A1A;
     overflow: hidden;
 }
 
@@ -567,7 +570,7 @@ img {
 .hero-swiper .swiper-button-prev:hover {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
-    color: #000000;
+    color: #1A1A1A;
 }
 
 .hero-swiper .swiper-pagination-bullet {
@@ -704,7 +707,7 @@ img {
    CTA ORÇAMENTO BANNER
    ========================================================================== */
 .section-cta {
-    background-image: linear-gradient(135deg, #0f0f0f, #1e1e1e);
+    background-image: linear-gradient(135deg, #1a1a1a, #2e2e2e);
     border-top: 2px solid var(--color-primary);
     border-bottom: 2px solid var(--color-primary);
     padding: 60px 0;
@@ -888,7 +891,7 @@ img {
 
 .diff-card:hover .diff-icon {
     background-color: var(--color-primary);
-    color: #000000;
+    color: #1A1A1A;
     transform: rotateY(180deg);
 }
 
@@ -906,10 +909,290 @@ img {
 }
 
 /* ==========================================================================
-   CONTACT / FORM SECTION
+   CONTACT SECTION (Institutional)
    ========================================================================== */
 .section-contact {
+    background-color: var(--color-light-surface);
+}
+
+.contact-channels-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.contact-channel-card {
+    background-color: #FFFFFF;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border-light);
+    padding: 36px 28px;
+    text-align: center;
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-premium);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-channel-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.4);
+    box-shadow: var(--shadow-premium-hover);
+}
+
+.contact-channel-card--wide {
+    grid-column: span 4;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    gap: 28px;
+    padding: 32px 36px;
+}
+
+.channel-icon {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--color-primary-dark);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: var(--transition-fast);
+    margin-bottom: 8px;
+}
+
+.contact-channel-card--wide .channel-icon {
+    margin-bottom: 0;
+}
+
+.contact-channel-card:hover .channel-icon {
+    background-color: var(--color-primary);
+    color: #1A1A1A;
+    border-color: var(--color-primary);
+}
+
+.channel-icon--green {
+    background-color: rgba(37, 211, 102, 0.1);
+    color: #22a855;
+    border-color: rgba(37, 211, 102, 0.2);
+}
+
+.contact-channel-card:hover .channel-icon--green {
+    background-color: #25d366;
+    color: #FFFFFF;
+    border-color: #25d366;
+}
+
+.contact-channel-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text-light);
+    margin-bottom: 4px;
+}
+
+.contact-channel-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.contact-channel-card--wide p {
+    flex-grow: 0;
+    max-width: 280px;
+}
+
+.channel-link {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-primary-dark);
+    transition: var(--transition-fast);
+    display: inline-block;
+}
+
+.channel-link:hover {
+    color: var(--color-primary);
+}
+
+.channel-link--green {
+    color: #22a855;
+}
+
+.channel-link--green:hover {
+    color: #25d366;
+}
+
+.channel-socials {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.social-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: var(--color-light-surface);
+    border: 1px solid var(--color-border-light);
+    border-radius: 30px;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    transition: var(--transition-fast);
+}
+
+.social-pill:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #1A1A1A;
+    transform: translateY(-2px);
+}
+
+/* Social Pill — Branded Colors */
+.social-pill--instagram {
+    border-color: rgba(225, 48, 108, 0.25);
+    color: #c13584;
+}
+.social-pill--instagram:hover {
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    border-color: transparent;
+    color: #FFFFFF;
+}
+
+.social-pill--facebook {
+    border-color: rgba(24, 119, 242, 0.25);
+    color: #1877F2;
+}
+.social-pill--facebook:hover {
+    background-color: #1877F2;
+    border-color: #1877F2;
+    color: #FFFFFF;
+}
+
+.social-pill--ml {
+    border-color: rgba(255, 230, 0, 0.3);
+    color: #DAA200;
+}
+.social-pill--ml:hover {
+    background-color: #FFE600;
+    border-color: #FFE600;
+    color: #333333;
+}
+
+/* WhatsApp link icon */
+.channel-link--green i {
+    font-size: 1.1rem;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* ==========================================================================
+   ORCAMENTO SECTION (Budget Form)
+   ========================================================================== */
+.section-orcamento {
     background-color: var(--color-light-bg);
+}
+
+.orcamento-grid {
+    display: grid;
+    grid-template-columns: 4fr 7fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.orcamento-text-side .section-tagline {
+    margin-bottom: 16px;
+}
+
+.orcamento-text-side .section-tagline::after {
+    left: 0;
+    transform: none;
+}
+
+.orcamento-text-side .section-title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+.orcamento-info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 32px;
+}
+
+.orcamento-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.orcamento-info-item i {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.orcamento-info-item span {
+    font-weight: 600;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.orcamento-whatsapp-action {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 1px solid var(--color-border-light);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.orcamento-whatsapp-text {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+}
+
+.btn-whatsapp-orcamento {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #25d366;
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 14px 28px;
+    border-radius: var(--border-radius);
+    transition: var(--transition-normal);
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.25);
+}
+
+.btn-whatsapp-orcamento:hover {
+    background-color: #22c35e;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+    color: #FFFFFF;
+}
+
+.btn-whatsapp-orcamento i {
+    font-size: 1.25rem;
 }
 
 .contact-grid {
@@ -1066,7 +1349,7 @@ img {
    FOOTER
    ========================================================================== */
 .footer-main {
-    background-color: #080808;
+    background-color: #1C1C1C;
     color: #FFFFFF;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 80px;
@@ -1113,7 +1396,7 @@ img {
 
 .footer-socials a:hover {
     background-color: var(--color-primary);
-    color: #000000;
+    color: #1A1A1A;
     border-color: var(--color-primary);
     transform: translateY(-3px);
 }
@@ -1171,7 +1454,7 @@ img {
 }
 
 .footer-bottom {
-    background-color: #040404;
+    background-color: #141414;
     padding: 24px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.03);
     font-size: 0.85rem;
@@ -1235,7 +1518,7 @@ img {
     right: 75px;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #1a1a1a;
+    background-color: #2a2a2a;
     color: #FFFFFF;
     padding: 8px 16px;
     border-radius: 6px;
@@ -1257,7 +1540,7 @@ img {
     transform: translateY(-50%) rotate(45deg);
     width: 12px;
     height: 12px;
-    background-color: #1a1a1a;
+    background-color: #2a2a2a;
     border-top: 1px solid rgba(255,255,255,0.05);
     border-right: 1px solid rgba(255,255,255,0.05);
 }
@@ -1346,6 +1629,21 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
     
+    /* Contact Channels */
+    .contact-channels-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-channel-card--wide {
+        grid-column: span 2;
+    }
+
+    /* Orcamento */
+    .orcamento-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
     /* Contact */
     .contact-grid {
         grid-template-columns: 1fr;
@@ -1445,6 +1743,22 @@ img {
         font-size: 2.5rem;
     }
     
+    /* Contact channels */
+    .contact-channels-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-channel-card--wide {
+        grid-column: span 1;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .channel-socials {
+        margin-left: 0;
+        justify-content: center;
+    }
+
     /* Contact */
     .contact-form-side {
         padding: 24px;

@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Simulate server request
             setTimeout(() => {
                 submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Enviar Solicitação <i class="fas fa-paper-plane"></i>';
+                submitBtn.innerHTML = 'Solicitar Orçamento <i class="fas fa-paper-plane"></i>';
                 
                 // Show success status
                 formStatus.className = 'form-status success';
